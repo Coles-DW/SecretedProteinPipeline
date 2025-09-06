@@ -60,3 +60,7 @@ awk '/^>/ {sub(/^>/,""); print}' "$WORKDIR/secreted_small_proteins.fa" > "$WORKD
 echo "[INFO] Pipeline complete!"
 echo "Total secreted proteins (no TMH): $(wc -l < "$WORKDIR/proteins_no_TM_IDs.txt")"
 echo "Total small secreted proteins (<=300 aa): $(wc -l < "$WORKDIR/secreted_small_proteins_IDs.txt")"
+
+Citations:
+1. Nielsen, H. (2017). Predicting secretory proteins with SignalP. In Protein function prediction: methods and protocols (pp. 59-73). New York, NY: Springer New York.
+2. A. Krogh, B. Larsson, G. von Heijne, and E. L. L. Sonnhammer. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of Molecular Biology, 305(3):567-580, January 2001.
